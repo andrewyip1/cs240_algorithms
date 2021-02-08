@@ -37,20 +37,46 @@ def wrap_by_k_pt3(arr,num):
             num = num - 1
     return arr
 
+def wrap_by_k_pt4(arr, num=0):
+    a = num%len(arr)
+    return arr[-a:] + arr[:-a]
+
+
+#MOST EFFICIENT WAY
+def wrap_by_k_pt5(arr, num): #go up to k and rotate it by 1 to wrap around
+    for i in range (num):
+        rightRotateByOne(arr)
+    return arr
+
+def rightRotateByOne(arr):
+    last = arr[len(arr)-1] #gets the last one that we're moving to the front
+    for i in range (len(arr)-2, -1, -1): 
+        arr[i+1] = arr[i] #moving each element up one index
+    arr[0] = last #after the loop is done we move the last one to the front
 
 arr = [1,2,3,4,5,6,7,8]
 print(arr)
 print(wrap_by_k(arr,3))
-
-
+print("\n")
 
 arr2 = [1,2,3,4,5,6,7,8]
 print(arr2)
 print(wrap_by_k(arr2,3))
+print("\n")
 
 arr3 = [1,2,3,4,5,6,7,8]
 print(arr3)
 print(wrap_by_k(arr3,3))
+print("\n")
 
+arr4 = [1,2,3,4,5,6,7,8]
+print(arr4)
+print(wrap_by_k(arr4,3))
+print("\n")
+
+arr5 = [1,2,3,4,5,6,7,8]
+print(arr5)
+print(wrap_by_k(arr5,3))
+print("\n")
 
 print("This method of O(n) and only takes one swap. ")
