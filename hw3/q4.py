@@ -65,3 +65,6 @@ arr4time = time.time()-st4
 print(arr4time)
 print("\n")
 
+print("This algorithm is O(n^2)")
+
+

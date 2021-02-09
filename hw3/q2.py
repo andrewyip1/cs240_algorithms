@@ -79,4 +79,4 @@ print(arr5)
 print(wrap_by_k(arr5,3))
 print("\n")
 
-print("This method of O(n) and only takes one swap. ")
+print("The time complexity is O(n)")

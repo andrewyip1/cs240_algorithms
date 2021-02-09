@@ -21,3 +21,4 @@ def count_trailingZeros(n):
 n = 25
 print('how many zeros at the end of ' , n , '!')
 print(count_trailingZeros(n))
+print("The time complexity is O(log(n))")
