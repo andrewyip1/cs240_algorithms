@@ -1,6 +1,4 @@
-#findMaxLoop for arrays of size 10**6 - then find the standard deviation.
-#ie sqrt of variance -formula for variance of a set of observations is:
-# sum the squares of all the observations then subtract n*(the average squared)
+
 
 import random
 import time

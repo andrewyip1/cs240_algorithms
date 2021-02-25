@@ -1,14 +1,3 @@
-""" Program 4  Write a program that does the bubble sort. Demonstrate its complexity 
-by empirically calculating  the time to execute for arrays of size 1000 and 2000 
-and show the difference.  Some useful commands:
-
-
-import time
-start_time = time.time()
-import random
-list4=[random.randint(0,10) for i in range(100)]
-# The line above creates a random list of size 100 with values 0-10 inclusive """
-
 import time
 start_time = time.time()
 import random

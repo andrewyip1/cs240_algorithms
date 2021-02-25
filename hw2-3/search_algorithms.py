@@ -1,7 +1,3 @@
-#Programming problem 1- (Compare Linear and Binary search )
-#(Use Python's time method and try various sizes of lists. We will compare worst case cases 
-#in both cases-(Am I repeating myself?) Lists will just consist of 1..n where n is a power of 2 - 
-#(To make life easy-but I think the binary search method actually works for any n)
 import time
 import random
 

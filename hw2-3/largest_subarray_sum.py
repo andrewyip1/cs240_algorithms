@@ -12,7 +12,7 @@
 # this method be? (explain why) Note -you need to vary the start index, the end index, and then compare the 
 # sums of each of these for the maximum sum.
 
-#2b) Use a strategy suggested by product_without and smallest_window 
+# Use a strategy suggested by product_without and smallest_window 
 # to come up with a method that is O(n). In other words you should be able to solve this by using no nested loops. 
 # (Hint: you need to keep track of running values of something like in programs 1 and 2.
 

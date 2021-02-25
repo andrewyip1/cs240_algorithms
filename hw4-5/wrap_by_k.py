@@ -1,4 +1,4 @@
-""" Program 2  Write a function wrap_by_k ( lst, k) that wraps an array lst around by k values. 
+"""Write a function wrap_by_k ( lst, k) that wraps an array lst around by k values. 
 so if lst = [1, 2, 3, 4, 5, 6, 7, 8] wrap_by_k(lst, 3)  returns [6, 7, 8, 1, 2, 3, 4, 5]
 Qualification: You do not have the memory to create a new array-the wrapping must be done in the original array. 
 

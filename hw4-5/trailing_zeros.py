@@ -1,8 +1,3 @@
-""" Program 3 How many 0's are at the end of 100! That's 100 factorial not 100 with an exclamation! Do this 
-without calculating 100! Write an efficient  
-general method that determines the number of 0's at the end of n!. For instance 10! = 3,628,800 has 2. 
-Your method is what order?  """
-
 #CALCULATE HOW MANY 0's AT THE END OF n!
 
 def count_trailingZeros(n):
