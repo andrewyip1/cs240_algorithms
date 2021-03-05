@@ -44,7 +44,7 @@ def construct_bit_strings (next_r_combinations, n):
     return bit_strings
     
 #Find the next r combinations of 1,2,...n
-next_r_combinations = [0,1,2] # 0 - (r-1) value
+next_r_combinations = [0,1,2] # 0 to (r-1) value
 n = 7
 
 print(next_r_combinations)
