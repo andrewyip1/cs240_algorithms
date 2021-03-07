@@ -40,7 +40,7 @@ print(next_r_combinations)
 print("\n")
 
 for i in range(14):
-    r_val = next_combo(next_r_combinations,n)
+    next_r_combinations = next_combo(next_r_combinations,n)
     print("combination #" , i+2)
     print(next_r_combinations)
     print("\n")
