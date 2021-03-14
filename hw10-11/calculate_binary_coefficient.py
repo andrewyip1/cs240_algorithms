@@ -2,7 +2,7 @@
 will be odd? Write a program to compute the binomial coefficients efficiently(ie at no place 
 in your code should k! be used)  for various values of n and k and propose a hypothesis  """
 
-def c (n, k):
+def nCr (n, k):
 
     if (k > n):
         return -1
@@ -17,4 +17,4 @@ def c (n, k):
 
 n = 10
 k = 5
-print(c(n,k))
+print(nCr(n,k))
