@@ -24,7 +24,7 @@ def catlan_recursive(n):
     return val
 
 
-n = 3
+n = 10
 count = 0  # to count how many times recursive call happens
 for i in range(n+1):
     print(catlan_recursive(i))
