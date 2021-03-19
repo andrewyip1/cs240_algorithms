@@ -17,16 +17,17 @@ def catlan_recursive(n):
     if n <= 1:  # when n = 0, 1
         return 1
 
-    val = 0
+    res = 0  # initializing value
     for k in range(n):  # sum from k to n
-        val += catlan_recursive(k)*catlan_recursive(n-k-1)
+        res += catlan_recursive(k)*catlan_recursive(n-k-1)
 
-    return val
+    return res
 
 
-n = 10
+n = 3
 count = 0  # to count how many times recursive call happens
 for i in range(n+1):
-    print(catlan_recursive(i))
-
-print("# times recursively called: ", count)
+    count = 0
+    print("catalan # when n = ", i, " is ", catlan_recursive(i))
+    print('# times recursive calls when n = ', i, " is ", count)
+    print("\n")
