@@ -4,14 +4,12 @@ using the brute force method. Test for A = [ 3 2 1 5 10 6 4 8 7 9 ] """
 # An inversion is when a[i] > a[j] and i < j
 # Time complexity: O(n^2)
 
-# [3,2,1,5,10,6,4,8,7,9] = unsorted
-# [1,2,3,4,5,6,7,8,9,10] = sorted
 
 def brute_force_num_inversions(A):
     n = len(A)
     count = 0
-    for i in range(n-1):  # checking the array
-        for j in range(i+1, n):  # checking the right side
+    for i in range(n-1):  # slow pointer
+        for j in range(i+1, n):  # fast pointer
             if A[i] > A[j]:
                 count += 1
     return count

@@ -1,3 +1,7 @@
+# What is an inversion?
+# An inversion is when a[i] > a[j] and i < j
+# Time complexity: O(nlogn)
+
 def merge_sort(A):
     n = len(A)
 
@@ -29,10 +33,12 @@ def merge_sort(A):
 
 def merge(C, D):
     sorted_merged_arr = []
-    i = 0  # traverse C
-    j = 0  # traverse D
+    i = 0  # traverse C array
+    j = 0  # traverse D array
     split_inversions = 0
     length = len(C)+len(D)
+
+    # sorting and merging process
 
     while i < len(C) and j < len(D):
         if C[i] <= D[j]:
@@ -58,6 +64,7 @@ def merge(C, D):
     print('merged sorted subarray: ', sorted_merged_arr)
     print('inversion count: ', split_inversions)
     print("\n")
+
     return sorted_merged_arr, split_inversions
 
 

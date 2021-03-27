@@ -26,7 +26,7 @@ def count_inversions_from_two_sorted_arr(C, D):
 
     while j < len(D):
         merged_arr.append(D[j])
-        split_inversions_count += (len(C)+len(D)//2 - i)
+        split_inversions_count += (midpoint - i)
         j += 1
 
     return merged_arr, split_inversions_count

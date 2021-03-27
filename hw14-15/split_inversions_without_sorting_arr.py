@@ -1,3 +1,7 @@
+# What is an inversion?
+# An inversion is when a[i] > a[j] and i < j
+# Time complexity: O(nlogn)
+
 def merge_sort(A):
 
     # Base Case
